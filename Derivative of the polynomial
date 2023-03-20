@@ -1,0 +1,38 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+string str;int k, n, k1, n1;
+int calc()
+{
+        for(int i = 0;i<=str.size();i++)
+        {
+            if((int)str[i] == '^')
+            {
+                k = (int)((str[i+1]-48)*(str[0]-48));
+                n = (int)(str[i+1]-1)-48;
+                cout<< k << "x" << "^" << n ;
+            }
+           if(str[i]=='+')
+            { 
+                cout<<" + ";
+                str[0]=str[i+1];
+                
+                for(int i =str[0];i<=str.size();i++)
+                    {
+                        if(str[i+1] == '^')
+                            {
+                                 k1 = (int)((str[i+1]-48)*(str[0]-48));
+                                 n1 = (int)(str[i+1]-1)-48;
+                                cout<< k1 << "x" << "^" << n1 ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                            }}}} 
+                            
+                cout<<endl;
+                return 0;
+}
+int main()
+{
+    cout<<"Enter the equation: "<<endl;
+    cin>>str;
+    calc();
+    return 0;
+}
